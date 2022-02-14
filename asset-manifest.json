@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.js": "/module-5.practice/static/js/main.279df9b5.js",
+    "main.js": "/module-5.practice/static/js/main.427c68d8.js",
     "index.html": "/module-5.practice/index.html",
+    "static/media/iconmonstr-trash-can-27.svg": "/module-5.practice/static/media/iconmonstr-trash-can-27.881fcd80c28fb1105e0e7e9fd8103606.svg",
     "static/media/iconmonstr-plus-2.svg": "/module-5.practice/static/media/iconmonstr-plus-2.9e5fd29dd2275069f0cb712b4f5f1c9b.svg",
-    "main.279df9b5.js.map": "/module-5.practice/static/js/main.279df9b5.js.map"
+    "main.427c68d8.js.map": "/module-5.practice/static/js/main.427c68d8.js.map"
   },
   "entrypoints": [
-    "static/js/main.279df9b5.js"
+    "static/js/main.427c68d8.js"
   ]
 }
