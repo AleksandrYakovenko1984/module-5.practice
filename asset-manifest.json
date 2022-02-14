@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/module-5.practice/static/js/main.c8d8f6fd.js",
+    "main.js": "/module-5.practice/static/js/main.279df9b5.js",
     "index.html": "/module-5.practice/index.html",
     "static/media/iconmonstr-plus-2.svg": "/module-5.practice/static/media/iconmonstr-plus-2.9e5fd29dd2275069f0cb712b4f5f1c9b.svg",
-    "main.c8d8f6fd.js.map": "/module-5.practice/static/js/main.c8d8f6fd.js.map"
+    "main.279df9b5.js.map": "/module-5.practice/static/js/main.279df9b5.js.map"
   },
   "entrypoints": [
-    "static/js/main.c8d8f6fd.js"
+    "static/js/main.279df9b5.js"
   ]
 }
