@@ -1,30 +1,51 @@
 import React, { Component } from "react";
-import IconButton from "./components/IconButton/IconButton";
-import Modal from "./components/Modal/Modal";
-import Clock from "./components/Clock/Clock";
-import Reader from "./components/Reader/Reader";
-import publication from "./publication.json";
-import { ReactComponent as AddIcon } from "./icons/iconmonstr-plus-2.svg";
-import { ReactComponent as IconClose } from "./icons/iconmonstr-trash-can-27.svg";
+import PokemonForm from "./components/PokemonInfo/FormPokemon";
+import PokemonInfo from "./components/PokemonInfo/PokemomInfo";
+// import IconButton from "./components/IconButton/IconButton";
+// import Modal from "./components/Modal/Modal";
+// import Clock from "./components/Clock/Clock";
+// import Reader from "./components/Reader/Reader";
+// import publication from "./publication.json";
+// import { ReactComponent as AddIcon } from "./icons/iconmonstr-plus-2.svg";
+// import { ReactComponent as IconClose } from "./icons/iconmonstr-trash-can-27.svg";
 // import Tabs from "./components/Tabs/Tab";
 // import tab from './tabs.json'
 
 class App extends Component {
   state = {
-    showModal: false,
+    pokemonName: "",
   };
+  // state = {
+  //   showModal: false,
+  // };
 
-  togleModal = () => {
-    this.setState(({ showModal }) => ({
-      showModal: !showModal,
-    }));
+  // togleModal = () => {
+  //   this.setState(({ showModal }) => ({
+  //     showModal: !showModal,
+  //   }));
+  // };
+
+  // async componentDidMount(){
+  //  this.setState({loading: true})
+  //   fetch('https://pokeapi.co/api/v2/pokemon/ditto')
+  //     .then(res => res.json())
+  //     .then(pokemon => this.setState({ pokemon }))
+  //     .finally(() => this.setState({loading: false}))
+  // }
+
+  handleFormSubmit = (pokemonName) => {
+    this.setState({ pokemonName });
   };
-
   render() {
-    const { showModal } = this.state;
+    // const { showModal } = this.state;
     return (
       <>
-        <Clock />
+        <PokemonForm onSubmit={this.handleFormSubmit} />
+        <PokemonInfo pokemonName={this.state.pokemonName} />
+        {this.state.loading && <h1>loading...</h1>}
+        {this.state.pokemon && <div>{this.state.pokemon.name}</div>}
+
+        {/* <Clock />
         <Reader items={publication} />
 
         <IconButton type="button" onClick={this.togleModal}>
@@ -49,7 +70,7 @@ class App extends Component {
               <IconClose width="25" height="25" fill="#fff" />
             </IconButton>
           </Modal>
-        )}
+        )} */}
       </>
     );
   }
